@@ -3,19 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>牙科治療服務｜陳必容醫師</title>
-  <meta name="description" content="提供根管治療、假牙製作、美學牙科等全科牙醫服務，診所鄰近七張與大坪林捷運站。">
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="全科牙醫陳必容醫師，鄰近七張與大坪林捷運站，提供疼痛治療、功能重建與美學牙科等專業服務。">
+  <title>醫師介紹｜Dr. Roy 陳必容醫師</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', 'Noto Sans TC', sans-serif;
+      background-color: #2b2b2b;
+      color: #f0f0f0;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(27, 27, 43, 0.9);
+      padding: 1rem 2rem;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      transition: background 0.3s ease;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .social-icons a {
+      margin-left: 0.3rem;
+      display: inline-block;
+    }
+    .social-icons img {
+      width: 20px;
+      height: 20px;
+    }
+    nav {
+      flex: 1 1 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1.5rem;
+      min-width: 0;
+    }
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: 600;
+      white-space: nowrap;
+      font-size: 1rem;
+    }
+    .hero {
+      padding: 7rem 2rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .hero img {
+      max-width: 300px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero-text h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero-text p {
+      margin: 0.5rem 0;
+    }
+    .hero-text hr {
+      margin: 1rem 0;
+      border: none;
+      border-top: 1px solid #888;
+    }
+    .hero-text ul {
+      padding-left: 1.2rem;
+    }
+    .hero-text li::marker {
+      color: #f0f0f0;
+    }
+    .services {
+      padding: 1rem 2rem 2rem;
+      background: #2b2b2b;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      text-align: center;
+    }
+    .services .category {
+      max-width: 300px;
+      margin: 0 auto;
+      transition: all 0.3s ease;
+    }
+    .services .category:hover {
+      background-color: #3a3a3a;
+      border-radius: 8px;
+      transform: scale(1.02);
+    }
+    .services h2 {
+      color: #f0f0f0;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .services li {
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #1b1b2b;
+      color: #888;
+    }
+    @media (max-width: 768px) {
+      nav {
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding-top: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Header（統一版） -->
   <header>
     <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
       <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 0.5rem;">
-        <div class="logo">
-          <a href="index.html">陳必容醫師</a>
-        </div>
+        <div class="logo">陳必容醫師</div>
         <div class="social-icons">
           <a href="https://www.instagram.com/dr.roychen/" target="_blank">
             <img src="icons/ig.png" alt="Instagram">
@@ -28,48 +161,56 @@
       <nav style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
         <a href="index.html">首頁</a>
         <a href="aboutme.html">醫師介紹</a>
-        <a href="services.html">治療項目</a>
+        <a href="education.html">衛教分享</a>
       </nav>
     </div>
   </header>
 
-  <!-- 主內容：治療項目為主，醫師簡介在側 -->
-  <main class="homepage-layout" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; padding: 2rem;">
-    
-    <!-- 主要服務內容 -->
-    <section class="main-services" style="flex: 1 1 300px; max-width: 600px;">
-      <h1>治療項目分類</h1>
-      <div class="service-group">
-        <h2>疼痛處理</h2>
-        <p>根管治療、蛀牙填補、拔智齒</p>
-      </div>
-      <div class="service-group">
-        <h2>牙齒重建</h2>
-        <p>全瓷冠、3D齒雕、活動假牙、植牙</p>
-      </div>
-      <div class="service-group">
-        <h2>美學牙科</h2>
-        <p>陶瓷貼片、牙齒美白、微笑設計</p>
-      </div>
-    </section>
-
-    <!-- 側邊簡介 -->
-    <aside class="brief-intro" style="flex: 1 1 250px; max-width: 300px;">
-      <h3>醫師簡介</h3>
-      <p>陳必容醫師 Dr. Roy<br>專業全科牙醫，具多年臨床經驗，致力於提供安心、細緻的治療。</p>
-      <a href="aboutme.html">了解更多</a>
-    </aside>
-  </main>
-
-  <!-- 地點提示 -->
-  <section class="location" style="text-align: center; margin-bottom: 2rem;">
-    <p>診所鄰近七張與大坪林捷運站，交通便利。</p>
+  <section class="hero">
+    <img src="images/dr-roy.jpg" alt="陳必容醫師形象照" style="transform: scale(0.6); margin-left: 2rem; margin-top: 1rem;">
+    <div class="hero-text">
+      <h1>陳必容醫師 Dr. Roy｜全科牙醫</h1>
+      <p>安心、專業、舒適的牙科診療</p>
+      <hr>
+      <ul>
+        <li>中國醫藥大學牙醫學系</li>
+        <li>前台北長庚醫院牙科部醫師</li>
+        <li>衛福部牙周照護認證醫師</li>
+        <li>OSSTEM 原廠認證植牙醫師</li>
+      </ul>
+    </div>
   </section>
 
-  <!-- Footer（統一版） -->
-  <footer>
-    <p>&copy; 2025 Dr. Roy 陳必容醫師. All rights reserved.</p>
-  </footer>
+  <section id="services" class="services">
+    <div class="category">
+      <h2>疼痛治療</h2>
+      <ul>
+        <li>蛀牙填補</li>
+        <li>根管治療</li>
+        <li>智齒拔除</li>
+      </ul>
+    </div>
+    <div class="category">
+      <h2>功能重建</h2>
+      <ul>
+        <li>人工植牙</li>
+        <li>活動假牙</li>
+        <li>3D 齒雕</li>
+        <li>數位全瓷假牙</li>
+      </ul>
+    </div>
+    <div class="category">
+      <h2>美學牙科</h2>
+      <ul>
+        <li>微笑設計</li>
+        <li>陶瓷貼片</li>
+        <li>牙齒美白</li>
+      </ul>
+    </div>
+  </section>
 
+  <footer>
+    &copy; 陳必容醫師｜全科牙醫
+  </footer>
 </body>
 </html>
