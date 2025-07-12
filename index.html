@@ -24,12 +24,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       transition: background 0.3s ease;
     }
     .logo-area {
       display: flex;
       align-items: center;
       gap: 1rem;
+      flex-wrap: wrap;
     }
     .logo {
       font-weight: bold;
@@ -44,17 +46,21 @@
       height: 20px;
       filter: brightness(0) invert(1);
     }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1.5rem;
+      max-width: 100%;
+    }
     nav a {
-  color: #f0f0f0;
-  text-decoration: none;
-  margin-left: 1.5rem;
-  font-weight: 600;
-  white-space: nowrap;
-  font-size: 1rem;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: 600;
+      white-space: nowrap;
+      font-size: 1rem;
+    }
     .hero {
       padding: 7rem 2rem 4rem;
       display: flex;
@@ -130,13 +136,8 @@
     }
     @media (max-width: 768px) {
       nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-      .hero {
-        flex-direction: column;
-        padding-top: 6rem;
+        justify-content: center;
+        gap: 1rem;
       }
     }
   </style>
