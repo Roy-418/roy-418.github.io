@@ -66,7 +66,7 @@
       background: #1b1b2b;
       color: #888;
     }
-    .life-stage-wrapper {
+    .life-stage-wrapper, .perio-stage-wrapper {
       display: flex;
       gap: 1rem;
       justify-content: center;
@@ -74,10 +74,10 @@
       flex-wrap: nowrap;
       overflow-x: auto;
       padding: 1rem;
-      transform: scale(0.9);
+      transform: scale(0.85);
       transform-origin: top center;
     }
-    .life-stage {
+    .life-stage, .perio-stage {
       text-align: center;
       flex: 0 0 auto;
       width: 130px;
@@ -86,13 +86,17 @@
       width: 130px;
       height: 130px;
     }
+    .perio-stage img {
+      width: 115px;
+      height: 115px;
+    }
     .arrow-horizontal {
       font-size: 1.2rem;
       color: #888;
       align-self: center;
     }
     @media (max-width: 768px) {
-      .life-stage-wrapper {
+      .life-stage-wrapper, .perio-stage-wrapper {
         flex-direction: column;
         align-items: center;
         transform: none;
@@ -170,7 +174,7 @@
       </div>
     </div>
   </section>
- <section id="perio-life" style="padding: 2rem 1rem 4rem; text-align: center;">
+   <section id="perio-life" style="padding: 1rem 1rem 4rem; text-align: center;">
     <h2 style="font-size: 1.6rem; margin-bottom: 0.5rem;">牙周的一生：從健康到治療</h2>
     <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 0.9rem; line-height: 1.6;">
       牙齦與牙周健康不可忽視，從牙齦炎到牙周病，越早治療越能保住牙齒。<br>
