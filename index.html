@@ -47,14 +47,14 @@
       filter: brightness(0) invert(1);
     }
     nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 1.5rem;
-      max-width: 100%;
-      margin-left: auto;
-    }
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
     nav a {
       color: #f0f0f0;
       text-decoration: none;
@@ -136,11 +136,13 @@
       color: #888;
     }
     @media (max-width: 768px) {
-      nav {
-        justify-content: center;
-        gap: 1rem;
-        margin-left: 0;
-      }
+  nav {
+    justify-content: flex-start;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-top: 0.5rem;
+  }
+}
     }
   </style>
 </head>
