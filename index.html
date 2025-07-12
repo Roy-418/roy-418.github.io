@@ -68,24 +68,26 @@
     }
     .life-stage-wrapper {
       display: flex;
-      gap: 2rem;
+      gap: 1rem;
       justify-content: center;
       align-items: flex-start;
       flex-wrap: nowrap;
       overflow-x: auto;
-      padding-bottom: 1rem;
+      padding: 1rem;
+      transform: scale(0.9);
+      transform-origin: top center;
     }
     .life-stage {
       text-align: center;
       flex: 0 0 auto;
-      width: 160px;
+      width: 130px;
     }
     .life-stage img {
-      width: 160px;
-      height: 160px;
+      width: 130px;
+      height: 130px;
     }
     .arrow-horizontal {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: #888;
       align-self: center;
     }
@@ -93,6 +95,7 @@
       .life-stage-wrapper {
         flex-direction: column;
         align-items: center;
+        transform: none;
       }
       .arrow-horizontal {
         transform: rotate(90deg);
@@ -123,10 +126,10 @@
   </header>
 
   <section id="tooth-life" style="padding: 8rem 1rem 4rem; text-align: center;">
-    <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">牙齒的一生：從預防到重建</h2>
-    <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1rem; line-height: 1.6;">
+    <h2 style="font-size: 1.6rem; margin-bottom: 0.5rem;">牙齒的一生：從預防到重建</h2>
+    <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 0.9rem; line-height: 1.6;">
       蛀牙若不及早處理，只會越來越嚴重，也會越來越花時間與金錢。<br>
-      用 1 分鐘認識牙齒從小蛀洞到拔牙植牙的過程。
+      一起來認識牙齒從小蛀洞到拔牙植牙的過程。
     </p>
 
     <div class="life-stage-wrapper">
