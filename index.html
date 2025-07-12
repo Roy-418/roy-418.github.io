@@ -42,18 +42,18 @@
       display: inline-block;
     }
     .social-icons img {
-      width: 20px;
-      height: 20px;
-      filter: brightness(0) invert(1);
-    }
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
+}
     nav {
+  flex: 1 1 auto;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
   gap: 1.5rem;
-  max-width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
+  min-width: 0;
 }
     nav a {
       color: #f0f0f0;
@@ -137,11 +137,12 @@
     }
     @media (max-width: 768px) {
   nav {
-    justify-content: flex-start;
+    justify-content: center;
     gap: 1rem;
-    overflow-x: auto;
+    flex-wrap: wrap;
     padding-top: 0.5rem;
   }
+}
 }
     }
   </style>
