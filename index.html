@@ -66,6 +66,37 @@
       background: #1b1b2b;
       color: #888;
     }
+    .life-stage-wrapper {
+      display: flex;
+      gap: 2rem;
+      overflow-x: auto;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+    .life-stage {
+      text-align: center;
+      flex: 0 0 auto;
+      width: 160px;
+    }
+    .life-stage img {
+      width: 160px;
+      height: 160px;
+    }
+    .arrow-horizontal {
+      font-size: 1.5rem;
+      color: #888;
+      align-self: center;
+    }
+    @media (max-width: 768px) {
+      .life-stage-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+      .arrow-horizontal {
+        transform: rotate(90deg);
+      }
+    }
   </style>
 </head>
 <body>
@@ -90,53 +121,48 @@
     </div>
   </header>
 
-  <section id="tooth-life" style="padding: 7rem 1rem 4rem; background-color: #2b2b2b; color: #f0f0f0; text-align: center;">
+  <section id="tooth-life" style="padding: 8rem 1rem 4rem; text-align: center;">
     <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">牙齒的一生：從預防到重建</h2>
-    <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1rem; line-height: 1.6;">
+    <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1rem; line-height: 1.6;">
       蛀牙若不及早處理，只會越來越嚴重，也會越來越花時間與金錢。<br>
       用 1 分鐘認識牙齒從小蛀洞到拔牙植牙的過程。
     </p>
 
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 2rem;">
-      <div>
-        <img src="images/tooth-1-sealant.png" alt="溝隙封填" width="160" height="160">
-        <h3>預防性溝隙封填</h3>
-        <p>適合兒童與青少年，有效預防蛀牙產生。</p>
+    <div class="life-stage-wrapper">
+      <div class="life-stage">
+        <img src="images/tooth-1-sealant.png" alt="溝隙封填">
+        <h3>溝隙封填</h3>
+        <p>預防蛀牙產生</p>
       </div>
-      <div style="font-size: 1.5rem; color: #888;">⬇</div>
-
-      <div>
-        <img src="images/tooth-2-filling.png" alt="蛀牙填補" width="160" height="160">
+      <div class="arrow-horizontal">➡</div>
+      <div class="life-stage">
+        <img src="images/tooth-2-filling.png" alt="蛀牙填補">
         <h3>蛀牙填補</h3>
-        <p>小範圍蛀牙，樹脂填補。<br>💰 花費等級：💰</p>
+        <p>初期處理<br>💰 花費等級：💰</p>
       </div>
-      <div style="font-size: 1.5rem; color: #888;">⬇</div>
-
-      <div>
-        <img src="images/tooth-3-crown.png" alt="牙套／齒雕" width="160" height="160">
+      <div class="arrow-horizontal">➡</div>
+      <div class="life-stage">
+        <img src="images/tooth-3-crown.png" alt="牙套／齒雕">
         <h3>牙套／齒雕</h3>
-        <p>大範圍蛀牙需以牙冠或齒雕修復。<br>💰 花費等級：💰💰💰</p>
+        <p>齒質損失大<br>💰 花費等級：💰💰💰</p>
       </div>
-      <div style="font-size: 1.5rem; color: #888;">⬇</div>
-
-      <div>
-        <img src="images/tooth-4-endo.png" alt="根管治療" width="160" height="160">
+      <div class="arrow-horizontal">➡</div>
+      <div class="life-stage">
+        <img src="images/tooth-4-endo.png" alt="根管治療">
         <h3>根管治療</h3>
-        <p>蛀到神經造成牙痛，需要清除牙髓感染。</p>
+        <p>蛀到神經</p>
       </div>
-      <div style="font-size: 1.5rem; color: #888;">⬇</div>
-
-      <div>
-        <img src="images/tooth-5-ext.png" alt="拔牙" width="160" height="160">
+      <div class="arrow-horizontal">➡</div>
+      <div class="life-stage">
+        <img src="images/tooth-5-ext.png" alt="拔牙">
         <h3>拔牙</h3>
-        <p>齒質不足、無法保留牙齒，只能拔除。</p>
+        <p>無法保留</p>
       </div>
-      <div style="font-size: 1.5rem; color: #888;">⬇</div>
-
-      <div>
-        <img src="images/tooth-6-imp.png" alt="植牙重建" width="160" height="160">
+      <div class="arrow-horizontal">➡</div>
+      <div class="life-stage">
+        <img src="images/tooth-6-imp.png" alt="植牙重建">
         <h3>植牙重建</h3>
-        <p>缺牙的最佳選擇，恢復咀嚼能力的最佳夥伴。<br>💰 花費等級：💰💰💰💰💰</p>
+        <p>時間長費用高<br>💰 花費等級：💰💰💰💰💰</p>
       </div>
     </div>
   </section>
