@@ -42,18 +42,18 @@
       display: inline-block;
     }
     .social-icons img {
-  width: 20px;
-  height: 20px;
-}
+      width: 20px;
+      height: 20px;
+    }
     nav {
-  flex: 1 1 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1.5rem;
-  min-width: 0;
-}
+      flex: 1 1 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1.5rem;
+      min-width: 0;
+    }
     nav a {
       color: #f0f0f0;
       text-decoration: none;
@@ -62,7 +62,7 @@
       font-size: 1rem;
     }
     .hero {
-      padding: 7rem 2rem 4rem;
+      padding: 7rem 2rem 2rem;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -96,7 +96,7 @@
       color: #f0f0f0;
     }
     .services {
-      padding: 3rem 2rem;
+      padding: 1rem 2rem 3rem;
       background: #2b2b2b;
       display: flex;
       flex-wrap: wrap;
@@ -135,41 +135,39 @@
       color: #888;
     }
     @media (max-width: 768px) {
-  nav {
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    padding-top: 0.5rem;
-  }
-}
-}
+      nav {
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding-top: 0.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-  <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 0.5rem;">
-      <div class="logo">陳必容醫師</div>
-      <div class="social-icons">
-  <a href="https://www.instagram.com/dr.roychen/" target="_blank">
-    <img src="icons/ig.png" alt="Instagram">
-  </a>
-  <a href="https://www.facebook.com/profile.php?id=100068881420728&locale=zh_TW" target="_blank">
-    <img src="icons/fb.png" alt="Facebook">
-  </a>
-</div>
+    <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 0.5rem;">
+        <div class="logo">陳必容醫師</div>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/dr.roychen/" target="_blank">
+            <img src="icons/ig.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100068881420728&locale=zh_TW" target="_blank">
+            <img src="icons/fb.png" alt="Facebook">
+          </a>
+        </div>
+      </div>
+      <nav style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+        <a href="#">關於我</a>
+        <a href="success.html">成功案例</a>
+        <a href="education.html">衛教分享</a>
+      </nav>
     </div>
-    <nav style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
-      <a href="#">關於我</a>
-      <a href="success.html">成功案例</a>
-      <a href="education.html">衛教分享</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
   <section class="hero">
-    <img src="images/dr-roy.jpg" alt="陳必容醫師形象照" style="transform: scale(0.7); margin-left: 3rem; margin-top: 1rem;">
+    <img src="images/dr-roy.jpg" alt="陳必容醫師形象照" style="transform: scale(0.6); margin-left: 2rem; margin-top: 1rem;">
     <div class="hero-text">
       <h1>陳必容醫師 Dr. Roy｜全科牙醫</h1>
       <p>安心、專業、舒適的牙科診療</p>
